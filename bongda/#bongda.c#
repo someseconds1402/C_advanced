@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include"bst.h"
+
+typedef struct {
+  char maso[10];
+  int diem;
+}bongda;
+
+int CountLine(FILE *p)
+{
+  rewind(p);
+  int line = 0;
+  char str[100];
+  while(fgets(str, 81, p) != NULL)
+    {
+      line++;
+    }
+  printf("line = %d\n", line);
+  return line;
+}
+
+void readTxt(FILE *p, bongda *data)
+{
+  int line = CountLine(p);
+  rewind(p);
+  for(int i = 0; i < line ; i++)
+    {
+      fscanf(p, "%[^,]s", data[i].name);
+      fgetc(p);
+      fscanf(p, "%[^\n]s", data[i].diem);
+      fgetc(p);
+    }
+}
+
+
+int main()
+{
+  int c;
+ menu:{
+    printf("MENU\n");
+    printf("1. Tao Cay\n");
+    printf("2. Ket Qua\n");
+    printf("3. Tim Kiem\n");
+    printf("4. Xuong Hang\n");
+    printf("5. Xuat File\n");
+    printf("6. Exit\n");
+    printf("Your choice?\n");
+    scanf("%d", &c);
+    switch(c)
+      {
+      case 1:
+	{
+	
+	  goto menu;
+	}
+      case 2:
+	{
+	 
+	  goto menu;
+	}
+      case 3:
+	{
+	 
+	  goto menu;
+	}
+      case 4:
+	{
+	 
+	  goto menu;
+	}
+      default:
+	{
+	  printf("Bye\n");
+	  return 0;
+	}
+      }
+  }
+}

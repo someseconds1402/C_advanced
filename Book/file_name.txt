@@ -1,0 +1,10 @@
+5 4
+10_nam_trong_tu---Kha_Handsome 21
+Ban_luan_ve_dao_an---Huan_Hoa_Tu 34
+Nhat_ky_cach_ly---Vu_Khac_Tiep 28
+Bi_kip_tan_gai_toan_tap---mimosa 18
+Giac_mong_tien_tri---Tiger-Tran 30
+21 34
+34 30
+21 18
+28 30

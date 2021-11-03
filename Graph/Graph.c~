@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+
+
+typedef struct{
+  int* matrix;
+  int sizemax;
+}Graph;
+
+Graph createGraph(int sizemax){
+  Graph g;
+  return g; 
+}
+
+int main(){
+  int i,n,out[100];
+  Graph g=createGraph(100);
+}
